@@ -1,0 +1,26 @@
+.picture {
+  position: relative;
+  overflow: hidden;
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 100ms linear;
+  }
+
+  &__img--hidden {
+    opacity: 0;
+  }
+
+  &__placeholder {
+    filter: blur(20px);
+  }
+
+  &__placeholder--hidden {
+    opacity: 0;
+  }
+}
