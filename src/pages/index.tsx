@@ -1,5 +1,6 @@
 import React, { FC } from "react"
 import Background from "../components/Background"
+import CardGird from "../components/CardGird"
 import LayoutBlock from "../components/LayoutBlock"
 
 interface IProps {}
@@ -15,7 +16,9 @@ const Home: FC<Props> = (props) => {
     <div className='w-screen h-screen'>
       <Background>
         <LayoutBlock>
-          <div className='w-full h-full '></div>
+          <div className='w-full h-full '>
+            <CardGird />
+          </div>
         </LayoutBlock>
       </Background>
     </div>
